@@ -1,19 +1,46 @@
 <!DOCTYPE HTML>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Oh the humanity!</title>
+	<meta name="author" content="Fernando Briano - http://fernandobriano.com">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 </head>
 <body>
-  <audio id="audio">
-    <source src="instantoh.wav" type="audio/wav">
-    Your browser does not support the audio element. <a href="http://getfirefox.com">Get Firefox</a>
-  </audio>
+  <div class="container">
 
-  <button type="button" id="play">
-    Instant "Oh the humanity!"
-  </button>
+    <h1 class="humanity">Oh the humanity</h1>
+    <audio id="audio">
+      <source src="instantoh.wav" type="audio/wav">
+      Your browser does not support the audio element. <a href="http://getfirefox.com">Get Firefox</a>
+    </audio>
 
+    <button type="button" id="play">
+      Oh the humanity!
+    </button>
+  <div id="footer">
+    Author: <a href="http://github.com/picandocodigo">picandocodigo</a> | <a href="http://github.com/picandocodigo/instantoh">Fork me on Github</a>
+  </div>
+
+  </div>
   <script type="text/javascript">
     function bindEvent(element, type, handler) {
       if(element.addEventListener) {
