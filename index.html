@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <audio id="audio">
+    <source src="instantoh.wav" type="audio/wav">
+    Your browser does not support the audio element. <a href="http://getfirefox.com">Get Firefox</a>
+  </audio>
+
+  <button type="button" id="play">
+    Instant "Oh the humanity!"
+  </button>
+
+  <script type="text/javascript">
+    function bindEvent(element, type, handler) {
+      if(element.addEventListener) {
+        element.addEventListener(type, handler, false);
+      } else {
+        element.attachEvent('on'+type, handler);
+      }
+    }
+
+    bindEvent(document.getElementById("play"), 'click', function(){
+      document.getElementById("audio").play();
+    });
+  </script>
+</body>
+</html>
