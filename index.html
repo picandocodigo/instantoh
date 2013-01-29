@@ -38,7 +38,7 @@
       </div>
     </div>
     <div id="footer">
-      Author: <a href="http://github.com/picandocodigo">picandocodigo</a> | <a href="http://github.com/picandocodigo/instantoh">Fork me on Github</a>
+      Author: <a href="http://github.com/picandocodigo">picandocodigo</a> | <a href="http://github.com/picandocodigo/instantoh">Fork me on Github</a> | <a href="#" id="mozilla_app">Install on Mozilla Marketplace</a>
     </div>
   </div>
   <script type="text/javascript">
@@ -52,6 +52,16 @@
 
     bindEvent(document.getElementById("play"), 'click', function(){
       document.getElementById("audio").play();
+    });
+
+    bindEvent(document.getElementById("mozilla_app"), 'click', function(){
+      var request = navigator.mozApps.install("http://instantoh.com/app.webapp");
+      request.onsuccess = function() {
+        alert("App installed");
+      };
+      request.onerror = function() {
+        alert(this.error.name);
+      };
     });
   </script>
   <script type="text/javascript">
