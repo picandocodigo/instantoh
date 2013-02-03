@@ -1,9 +1,10 @@
 {
-  "name": "Instant Oh, the humanity!",
+  "name": "Oh, the humanity!",
   "description": "\"Oh, the humanity!\" button from Herbert Morrison's report of the Hindenburg disaster.",
   "launch_path": "/",
   "icons": {
-    "64": "/images/icon-64x64.png"
+    "64": "/images/icon-64x64.png",
+    "128": "/images/icon-128x128.png"
   },
   "developer": {
     "name": "Fernando Briano",
