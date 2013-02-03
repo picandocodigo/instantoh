@@ -7,22 +7,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Oh the humanity!</title>
-	<meta name="author" content="Fernando Briano - http://fernandobriano.com">
+  <meta name="author" content="Fernando Briano - http://fernandobriano.com">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="stylesheets/base.css">
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script type="text/javascript" src="js/ga.js"></script>
 </head>
 <body>
   <div class="container">
@@ -34,48 +34,12 @@
       </audio>
 
       <div id="play">
-
       </div>
     </div>
     <div id="footer">
       Author: <a href="http://github.com/picandocodigo">picandocodigo</a> | <a href="http://github.com/picandocodigo/instantoh">Fork me on Github</a> | <a href="#" id="mozilla_app">Install on Mozilla Marketplace</a>
     </div>
   </div>
-  <script type="text/javascript">
-    function bindEvent(element, type, handler) {
-      if(element.addEventListener) {
-        element.addEventListener(type, handler, false);
-      } else {
-        element.attachEvent('on'+type, handler);
-      }
-    }
-
-    bindEvent(document.getElementById("play"), 'click', function(){
-      document.getElementById("audio").play();
-    });
-
-    bindEvent(document.getElementById("mozilla_app"), 'click', function(){
-      var request = navigator.mozApps.install("http://instantohthehumanity.com/app.webapp");
-      request.onsuccess = function() {
-        alert("App installed");
-      };
-      request.onerror = function() {
-        alert(this.error.name);
-      };
-    });
-  </script>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37870454-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
