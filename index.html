@@ -55,7 +55,7 @@
     });
 
     bindEvent(document.getElementById("mozilla_app"), 'click', function(){
-      var request = navigator.mozApps.install("http://instantohthehumanity.com/app.webapp");
+      var request = navigator.mozApps.install("http://instantohthehumanity.com/package.manifest");
       request.onsuccess = function() {
         alert("App installed");
       };
