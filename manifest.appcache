@@ -1,11 +1,13 @@
 CACHE MANIFEST
-# v4
+# v5
 
 index.html
 images/bg.jpg
 images/btn1.jpg
 images/btn2.jpg
 images/favicon.ico
+images/icon-64x64.png
+images/icon-128x128.png
 js/app.js
 js/ga.js
 stylesheets/base.css
