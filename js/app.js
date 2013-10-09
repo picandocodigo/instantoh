@@ -16,7 +16,7 @@ window.onload = function(){
     document.getElementById("install").innerHTML = html
 
     bindEvent(document.getElementById("mozilla_app"), 'click', function(){
-      var request = navigator.mozApps.install("http://instantohthehumanity.com/manifest.webapp");
+      var request = navigator.mozApps.installPackage("instantoh.zip");
       request.onsuccess = function() {
         alert("App installed");
       };
