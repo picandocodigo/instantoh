@@ -16,7 +16,9 @@ window.onload = function(){
     document.getElementById("install").innerHTML = html
 
     bindEvent(document.getElementById("mozilla_app"), 'click', function(){
-      var request = navigator.mozApps.installPackage("instantoh.zip");
+      var manifestURL = location.href.substring(0, location.href.lastIndexOf("/")) + "/package.webapp";
+      var installApp = navigator.mozApps.installPackage(manifestURL);
+
       request.onsuccess = function() {
         alert("App installed");
       };
