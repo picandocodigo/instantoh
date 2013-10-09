@@ -2,9 +2,10 @@
   "name": "Oh, the humanity!",
   "version": "0.2",
   "description": "\"Oh, the humanity!\" button from Herbert Morrison's report of the Hindenburg disaster.",
-  "launch_path": "/",
+  "launch_path": "/index.html",
   "fullscreen": "true",
   "icons": {
+    "48": "/images/icon-48x48.png",
     "64": "/images/icon-64x64.png",
     "128": "/images/icon-128x128.png"
   },
