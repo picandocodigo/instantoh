@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v6
+# v7
 
 index.html
 instantoh.wav
@@ -7,9 +7,12 @@ images/bg.jpg
 images/btn1.jpg
 images/btn2.jpg
 images/favicon.ico
-images/icon-64x64.png
+images/icon-32x32.png
 images/icon-48x48.png
+images/icon-60x60.png
+images/icon-64x64.png
 images/icon-128x128.png
+images/icon-256x256.png
 js/app.js
 js/ga.js
 stylesheets/base.css
