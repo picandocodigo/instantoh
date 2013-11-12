@@ -17,12 +17,12 @@ window.onload = function(){
 
     bindEvent(document.getElementById("mozilla_app"), 'click', function(){
       var manifestURL = location.href.substring(0, location.href.lastIndexOf("/")) + "/manifest.webapp";
-      var installApp = navigator.mozApps.installPackage(manifestURL);
+      var installApp = navigator.mozApps.install(manifestURL);
 
-      request.onsuccess = function() {
+      installApp.onsuccess = function() {
         alert("App installed");
       };
-      request.onerror = function() {
+      installApp.onerror = function() {
         alert(this.error.name);
       };
     });
