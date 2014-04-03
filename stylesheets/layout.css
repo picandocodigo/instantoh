@@ -1,21 +1,9 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
-/* Table of Content
-==================================================
-  #Site Styles
-  #Page Styles
-  #Media Queries
-  #Font-Face */
-
 /* #Site Styles
 ================================================== */
+html, body{
+    height: 100%;
+    margin: 0;
+}
 html {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -24,14 +12,35 @@ html {
   background-size: cover;
 }
 
+body{
+    font: 14px/21px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+a{
+    color: #eee;
+}
+
 .container{
-  background-color:rgba(200,200,200,0.8);
-  margin-top: 10%;
+  background-color:rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  width: 420px;
+  height: 100%;
+  position: relative;
 }
 
 .content{
   text-align: center;
   padding: 10%;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    text-align: center;
 }
 /* #Page Styles
 ================================================== */
@@ -47,39 +56,9 @@ html {
   background: url(../images/btn2.png);
 }
 
-/* #Media Queries
-================================================== */
-
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) {}
-
-  /* Tablet Portrait size to standard 960 (devices and browsers) */
-  @media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {}
-
-  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-  @media only screen and (max-width: 479px) {}
-
-
-/* #Font-Face
-================================================== */
-/*    This is the proper syntax for an @font-face file
-    Just create a "fonts" folder at the root,
-    copy your FontName into code below and remove
-    comment brackets */
-
-/*  @font-face {
-      font-family: 'FontName';
-      src: url('../fonts/FontName.eot');
-      src: url('../fonts/FontName.eot?iefix') format('eot'),
-           url('../fonts/FontName.woff') format('woff'),
-           url('../fonts/FontName.ttf') format('truetype'),
-           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-      font-weight: normal;
-      font-style: normal; }
-*/
+@media (max-width: 420px) {
+  .container{
+      max-width: 100%;
+      min-width: 260px;
+  }
+}

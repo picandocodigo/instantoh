@@ -1,6 +1,6 @@
 {
   "name": "Oh, the humanity!",
-  "version": "0.2",
+  "version": "0.3",
   "description": "\"Oh, the humanity!\" button from Herbert Morrison's report of the Hindenburg disaster.",
   "launch_path": "/index.html",
   "fullscreen": "true",

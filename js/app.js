@@ -12,8 +12,8 @@ bindEvent(document.getElementById("play"), 'click', function(){
 
 window.onload = function(){
   if (navigator.mozApps){
-    html = " | <a href=\"#\" id=\"mozilla_app\">Install on Mozilla Marketplace</a>"
-    document.getElementById("install").innerHTML = html
+    html = " | <a href=\"#\" id=\"mozilla_app\">Install on Firefox</a>";
+    document.getElementById("install").innerHTML = html;
 
     bindEvent(document.getElementById("mozilla_app"), 'click', function(){
       var manifestURL = location.href.substring(0, location.href.lastIndexOf("/")) + "/manifest.webapp";
