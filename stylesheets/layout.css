@@ -48,12 +48,13 @@ a{
   width: 217px;
   margin: 0px auto;
   height: 218px;
-  background: url(../images/btn1.png);
+  background: url(../images/btn.png);
   display: block;
 }
 
 #play:hover{
-  background: url(../images/btn2.png);
+  background-image: url(../images/btn.png);
+  background-position: 0 218px;
 }
 
 @media (max-width: 420px) {
